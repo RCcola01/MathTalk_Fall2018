@@ -1,6 +1,6 @@
 iOS
 PlayerPath?
-/Users/Dennis/Desktop/MathTalkDemo
+/Users/Rachel/Desktop/Desktop Folders/Fall 2018/Builds/scale_scripts_build
 SceneListBegin?
 Assets/My_Assets/Scenes/ScratchARTest.unity
 SceneListEnd?
@@ -378,3 +378,6 @@ c8a41ce4eea7677f6dd2aa0e422a2f04 Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehav
 c31ff9acb65f7a15b5c6fd77c3314d83 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 486cd95c82d8305219c352c06b776e1f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.UnityARCameraNearFar
+03adb7294f9e553d4218dc36d8bb5599 Assembly-CSharp.dll:.CSharpscaling
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.onClickForScaling
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.DragObject1

@@ -27,6 +27,8 @@ GameObject:
   - component: {fileID: 114386926395647852}
   - component: {fileID: 114921812715313680}
   - component: {fileID: 114849977291611588}
+  - component: {fileID: 114418344553638552}
+  - component: {fileID: 114581796729819714}
   m_Layer: 10
   m_Name: GravCylinder
   m_TagString: Untagged
@@ -120,6 +122,28 @@ MonoBehaviour:
   RequiredFingerCount: 0
   RequiredSelectable: {fileID: 114921812715313680}
   Camera: {fileID: 0}
+--- !u!114 &114418344553638552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1508994209360500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbee23b3bbc2a41208ae8bbafdbb1742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114581796729819714
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1508994209360500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a92d715faebfa4d368ddcefc6ccc2cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114849977291611588
 MonoBehaviour:
   m_ObjectHideFlags: 1

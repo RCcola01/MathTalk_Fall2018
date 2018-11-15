@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{B9C7D8AF-DC5B-EB82-0521-70FD61DFA009}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARGeneratePlane.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/My_Assets/Scripts/CreateObj.cs">
     <Files>
       <File FileName="Assets/LeanTouch/Examples/Scripts/LeanSelect.cs" Line="1" Column="1" />
       <File FileName="Assets/LeanTouch/Examples/Scripts/LeanFingerTap.cs" Line="1" Column="1" />
@@ -13,6 +13,9 @@
       <File FileName="Assets/My_Assets/Scripts/SpawnObject.cs" Line="1" Column="1" />
       <File FileName="Assets/My_Assets/Scripts/SpawnRadioButtons.cs" Line="1" Column="1" />
       <File FileName="Assets/My_Assets/Scripts/ShapeObjectDestroyer.cs" Line="7" Column="2" />
+      <File FileName="Assets/My_Assets/Scripts/CSharpscaling.cs" Line="43" Column="2" />
+      <File FileName="Assets/My_Assets/Scripts/onClickForScaling.cs" Line="11" Column="1" />
+      <File FileName="Assets/My_Assets/Scripts/DragObject1.cs" Line="25" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

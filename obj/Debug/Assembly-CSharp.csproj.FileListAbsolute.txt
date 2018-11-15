@@ -1,0 +1,2 @@
+/Users/Rachel/Desktop/Desktop Folders/Fall 2018/MathTalk_Fall2018/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
+/Users/Rachel/Desktop/Desktop Folders/Fall 2018/MathTalk_Fall2018/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache

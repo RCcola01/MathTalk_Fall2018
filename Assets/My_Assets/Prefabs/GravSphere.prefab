@@ -27,6 +27,8 @@ GameObject:
   - component: {fileID: 114667813736464550}
   - component: {fileID: 114066239293920890}
   - component: {fileID: 114255653784746250}
+  - component: {fileID: 114176695295775896}
+  - component: {fileID: 114007586124673984}
   m_Layer: 10
   m_Name: GravSphere
   m_TagString: Untagged
@@ -104,6 +106,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114007586124673984
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1425065082621592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a92d715faebfa4d368ddcefc6ccc2cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114066239293920890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -139,6 +152,17 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   isSelected: 1
+--- !u!114 &114176695295775896
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1425065082621592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbee23b3bbc2a41208ae8bbafdbb1742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114255653784746250
 MonoBehaviour:
   m_ObjectHideFlags: 1

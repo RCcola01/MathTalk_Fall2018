@@ -28,6 +28,8 @@ GameObject:
   - component: {fileID: 114218954579488742}
   - component: {fileID: 114773747908290746}
   - component: {fileID: 114707186726657656}
+  - component: {fileID: 114882319093443976}
+  - component: {fileID: 114735611688872076}
   m_Layer: 10
   m_Name: GravCube
   m_TagString: Untagged
@@ -163,6 +165,17 @@ MonoBehaviour:
   DestroyEffect: {fileID: 1878034607258336, guid: 03175b387fe794b2e9b2d76884cfef32,
     type: 2}
   ARPlaneLayer: 10
+--- !u!114 &114735611688872076
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1859822176127166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a92d715faebfa4d368ddcefc6ccc2cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114773747908290746
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -198,6 +211,17 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   isSelected: 1
+--- !u!114 &114882319093443976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1859822176127166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbee23b3bbc2a41208ae8bbafdbb1742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114985807003727270
 MonoBehaviour:
   m_ObjectHideFlags: 1
