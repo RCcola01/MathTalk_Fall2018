@@ -1,6 +1,6 @@
 iOS
 PlayerPath?
-/Users/Dennis/Desktop/MathTalkDemo
+/Users/Rachel/Desktop/Desktop Folders/Fall 2018/Builds/new_slider_build
 SceneListBegin?
 Assets/My_Assets/Scenes/ScratchARTest.unity
 SceneListEnd?
