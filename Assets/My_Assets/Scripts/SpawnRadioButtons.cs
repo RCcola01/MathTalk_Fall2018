@@ -10,9 +10,10 @@ public class SpawnRadioButtons : MonoBehaviour
     //public int RadioInt = 3;
 
     public enum SpawnProperty { Magnet, Rubber, Paper, Default }; //have this be changed by the property slider. When a new object is created, it gets the property that this is currently assigned to
-    //when object is created, have a case statement that gives it different properties depending on this enum value
+    public enum SpawnShape { Cube, Cylinder, Sphere };
 
-    static public SpawnProperty CurrentProperty; //controlled by materialSelection script
+    public SpawnProperty CurrentProperty; //controlled by UI buttons
+    public SpawnShape CurrentShape; //controlled by UI buttons
 
     public MagnetManager magnetManager;
     public PhysicMaterial magneticMaterial; //defined in the editor
@@ -36,6 +37,8 @@ public class SpawnRadioButtons : MonoBehaviour
 
     void Start()
     {
+        CurrentProperty = SpawnProperty.Default;
+        CurrentShape = SpawnShape.Cube;
         // Will clean this up to make it more modular
         ObjColors[0] = new Color(0.8431373F, 0.2F, 0.1215686F); // Red
         ObjColors[1] = new Color(0.2627451F, 0.7058824F, 1F); // Blue
@@ -60,21 +63,59 @@ public class SpawnRadioButtons : MonoBehaviour
         return false;
     }
 
-
+    //called in the UI by the expandable shape buttons
     public void Cube()
     {
-        SpawnObj = CubeObj;
+        ChangeCurrentShape(SpawnShape.Cube);
     }
-
     public void Sphere()
     {
-        SpawnObj = SphereObj;
+        ChangeCurrentShape(SpawnShape.Sphere);
     }
-
     public void Can()
     {
-        SpawnObj = CanObj;
+        ChangeCurrentShape(SpawnShape.Cylinder);
     }
+
+    public void ChangeCurrentShape(SpawnShape shape){
+        CurrentShape = shape;
+        switch(CurrentShape){
+            case SpawnShape.Cube:
+                SpawnObj = CubeObj;
+                break;
+            case SpawnShape.Cylinder:
+                SpawnObj = CanObj;
+                break;
+            case SpawnShape.Sphere:
+                SpawnObj = SphereObj;
+                break;
+            default:
+                break;
+        }
+    }
+
+    //called in the UI by the expandable material buttons
+    public void DefaultMaterial(){
+        ChangeCurrentMaterial(SpawnProperty.Default);
+    }
+    public void MagneticMaterial()
+    {
+        ChangeCurrentMaterial(SpawnProperty.Magnet);
+    }
+    public void RubberMaterial()
+    {
+        ChangeCurrentMaterial(SpawnProperty.Rubber);
+    }
+    public void PaperMaterial()
+    {
+        ChangeCurrentMaterial(SpawnProperty.Paper);
+    }
+
+
+    public void ChangeCurrentMaterial(SpawnProperty material){
+        CurrentProperty = material;
+    }
+
 
     public void Delete() // Deletes all objects in entire scene --> Not currently implemented, instead delete objects by deleting
     //plane, or delete just one by dragging it off the plane

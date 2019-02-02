@@ -38,10 +38,13 @@ public class MaterialSelector : MonoBehaviour {
             float minSliderVal = (float)i / (float)OrderedProperties.Length;
             float maxSliderVal = (float)(i + 1) / (float)OrderedProperties.Length;
             if(minSliderVal<=materialSlider.value && materialSlider.value <=maxSliderVal){ //if the slider's value is currently set in this property's portion/zone
+                //following code is commented out because of compiler errors when object selection process changed in UI. This script is outdated
+                /*
                 if(SpawnRadioButtons.CurrentProperty != OrderedProperties[i]){ //if the current property is not equal to the one the slider is currently placed on
                     SpawnRadioButtons.CurrentProperty = OrderedProperties[i]; //set the current property equal to the one the slider is placed on
                     MaterialIcon.GetComponent<Image>().sprite = OrderedPropertyIcons[i]; //update the icon on the slider to this material's icon
                 }
+                */
             }
         }
 
