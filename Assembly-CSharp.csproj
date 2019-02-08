@@ -207,11 +207,11 @@
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>/Users/Dennis/Desktop/MathTalk_Fall2018/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/Dennis/Desktop/MathTalk_Fall2018/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>/Users/Dennis/Desktop/MathTalk_Fall2018/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>/Users/Dennis/Desktop/MathTalk_Fall2018/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>/Users/Dennis/Desktop/MathTalk_Fall2018/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>

@@ -18,8 +18,12 @@ public class ToggleChildrenVisibility : MonoBehaviour
 
     public void ToggleVisibility(){
         for (int i = 0; i < transform.childCount; i++){
-            bool visibility = transform.GetChild(i).gameObject.activeInHierarchy;
-            transform.GetChild(i).gameObject.SetActive(!visibility);
+            if (UIVisibilityManager.UIVisible) //if UI is visible, handle opening and closing of individual panels normally. User not allowed to open/close panels once closing animation begins
+            {
+                bool visibility = transform.GetChild(i).gameObject.activeInHierarchy;
+                transform.GetChild(i).gameObject.SetActive(!visibility);
+            }
         }
+
     }
 }

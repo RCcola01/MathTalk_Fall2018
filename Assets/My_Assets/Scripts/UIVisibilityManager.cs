@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class UIVisibilityManager : MonoBehaviour
 {
+
+    public static bool UIVisible;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        UIVisible = true;
     }
 
     // Update is called once per frame
@@ -27,11 +30,13 @@ public class UIVisibilityManager : MonoBehaviour
         //trigger closing animation
         GetComponent<Animator>().SetBool("Close", true);
         GetComponent<Animator>().SetBool("Open", false);
+        UIVisible = false;
     }
 
     public void OpenUIMenu(){
         //trigger opening animation
         GetComponent<Animator>().SetBool("Close", false);
         GetComponent<Animator>().SetBool("Open", true);
+        UIVisible = true;
     }
 }
