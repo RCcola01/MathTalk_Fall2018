@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class UIVisibilityManager : MonoBehaviour
 {
-
+    public float closingTime; //defined in the inspector, represents max time inactive before closing
     public static bool UIVisible;
+    private float inactiveTime; //counts how long the UI has been inactive
 
     // Start is called before the first frame update
     void Start()
     {
         UIVisible = true;
+        inactiveTime = 0f;
     }
 
     // Update is called once per frame
     void Update()
     {
+        HandleInactiveTime();
         
     }
 
@@ -35,8 +38,21 @@ public class UIVisibilityManager : MonoBehaviour
 
     public void OpenUIMenu(){
         //trigger opening animation
+        ResetClosingTimer();
         GetComponent<Animator>().SetBool("Close", false);
         GetComponent<Animator>().SetBool("Open", true);
         UIVisible = true;
+    }
+
+    //called whenever a button on the UI is tapped 
+    public void ResetClosingTimer(){
+        inactiveTime = 0f;
+    }
+
+    private void HandleInactiveTime(){
+        inactiveTime += Time.deltaTime;
+        if (inactiveTime > closingTime && UIVisible){
+            CloseUIMenu();
+        }
     }
 }
