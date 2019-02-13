@@ -240,6 +240,7 @@ efee04fd7a8b900e85d693e88d5b5f35 Assembly-CSharp.dll:.ColorPicker
 ef4eed9cf61f5457c8d431087bd4829d Assembly-CSharp.dll:Lean.Touch.LeanTouch
 7d193e65082ac8b0265684451eddca87 Assembly-CSharp.dll:.SpawnObject
 c896001203784eaf50c0839b7a358365 Assembly-CSharp.dll:.UnityARKitPluginSettings
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.HandleObjectRotation
 cbfb14e1cf7341d69024b248349bc857 Assembly-CSharp.dll:.OnClickHighlight
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
