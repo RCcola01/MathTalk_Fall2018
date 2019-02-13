@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.iOS;
 
 public class UIVisibilityManager : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class UIVisibilityManager : MonoBehaviour
     void Update()
     {
         HandleInactiveTime();
+        HandleManualUIClosing();
         
     }
 
@@ -55,4 +57,40 @@ public class UIVisibilityManager : MonoBehaviour
             CloseUIMenu();
         }
     }
+
+    Vector2 startPos = new Vector2();
+    private bool swiping = false;
+    private void HandleManualUIClosing(){
+        if (Input.touchCount == 1){
+            if (Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                startPos = Input.GetTouch(0).position;
+                swiping = true;
+            }
+            else if ((Input.GetTouch(0).phase == TouchPhase.Canceled || Input.GetTouch(0).phase == TouchPhase.Ended) && swiping)
+            {
+                //if the swipe was more tall than wide and down on the lower third of the screen and the swipe is long enough and the UI is open
+                swiping = false;
+                bool swipedLongEnough = Mathf.Abs(Vector2.Distance(Input.GetTouch(0).position, startPos)) > Screen.height/5f;
+                bool swipedDown = startPos.y > Input.GetTouch(0).position.y;
+                bool swipedLowerScreen = (Input.GetTouch(0).position.y < Screen.height / 3f);
+                bool moreTallThanWide = (Mathf.Abs(startPos.y - Input.GetTouch(0).position.y) > Mathf.Abs(startPos.x - Input.GetTouch(0).position.x));
+                if (swipedDown && swipedLongEnough && swipedLowerScreen && moreTallThanWide)
+                {
+                    CloseUIMenu();
+                }
+            }
+            else if ((Input.GetTouch(0).phase == TouchPhase.Moved)){
+                if ((Input.GetTouch(0).deltaPosition.y > 0f)){
+                    startPos = Input.GetTouch(0).position; //start position is now at the maximum y of the touch
+                }
+            }
+        }
+        else{
+            swiping = false;
+            
+        }
+
+    }
+
 }
