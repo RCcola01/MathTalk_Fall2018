@@ -46,6 +46,15 @@ public class UIVisibilityManager : MonoBehaviour
         UIVisible = true;
     }
 
+    public void ToggleUIMenuShow(){
+        if(UIVisible){
+            CloseUIMenu();
+        }
+        else{
+            OpenUIMenu();
+        }
+    }
+
     //called whenever a button on the UI is tapped 
     public void ResetClosingTimer(){
         inactiveTime = 0f;
