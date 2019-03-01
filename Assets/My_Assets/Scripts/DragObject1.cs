@@ -10,31 +10,41 @@ public class DragObject1 : MonoBehaviour
 
     void OnMouseDown()
     {
-        dist = Camera.main.WorldToScreenPoint(transform.position);
-        posX = Input.mousePosition.x - dist.x;
-        posY = Input.mousePosition.y - dist.y;
+        if (!PaintingManager.InPaintMode)
+        {
+            dist = Camera.main.WorldToScreenPoint(transform.position);
+            posX = Input.mousePosition.x - dist.x;
+            posY = Input.mousePosition.y - dist.y;
 
-        GetComponent<SelectTracker>().activateHighlight();
+            GetComponent<SelectTracker>().activateHighlight();
+        }
     }
 
     void OnMouseDrag()
     {
-        GetComponent<SelectTracker>().isBeingTranslated = true;
+        if (!PaintingManager.InPaintMode)
+        {
+            GetComponent<SelectTracker>().isBeingTranslated = true;
 
-        Vector3 curPos =
-         new Vector3(Input.mousePosition.x - posX,
-                     Input.mousePosition.y - posY, dist.z);
+            Vector3 curPos =
+             new Vector3(Input.mousePosition.x - posX,
+                         Input.mousePosition.y - posY, dist.z);
 
-        Vector3 worldPos = Camera.main.ScreenToWorldPoint(curPos);
-        transform.position = worldPos;
+            Vector3 worldPos = Camera.main.ScreenToWorldPoint(curPos);
+            transform.position = worldPos;
+        }
     }
 
     void OnMouseUp()
     {
-        GetComponent<SelectTracker>().isBeingTranslated = false;
+        if (!PaintingManager.InPaintMode)
+        {
+            GetComponent<SelectTracker>().isBeingTranslated = false;
 
-        if(!GetComponent<SelectTracker>().isBeingScaled){
-            GetComponent<SelectTracker>().deactivateHighlight();
+            if (!GetComponent<SelectTracker>().isBeingScaled)
+            {
+                GetComponent<SelectTracker>().deactivateHighlight();
+            }
         }
     }
 }

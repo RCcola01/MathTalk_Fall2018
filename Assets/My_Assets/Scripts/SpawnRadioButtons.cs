@@ -148,7 +148,7 @@ public class SpawnRadioButtons : MonoBehaviour
                 dist = Vector3.Distance(StartPos, EndPos); //distance between coordinate of where finger is put down vs. lifted off screen
                 if (dist == 0) //if object being moved and not creating a new one 
                 {
-                    if (Physics.Raycast(ray, out hit, maxRayDistance, collisionLayer))
+                    if (Physics.Raycast(ray, out hit, maxRayDistance, collisionLayer) && !PaintingManager.InPaintMode)
                     {
                         GameObject obj = Instantiate(SpawnObj, hit.point, hit.transform.rotation);
                         CreatedObjs.Add(obj); // Adds object to list for easy deletion

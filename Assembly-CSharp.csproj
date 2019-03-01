@@ -93,6 +93,8 @@
     <Compile Include="Assets\LeanTouch\Scripts\LeanGesture.cs" />
     <Compile Include="Assets\LeanTouch\Scripts\LeanSnapshot.cs" />
     <Compile Include="Assets\LeanTouch\Scripts\LeanTouch.cs" />
+    <Compile Include="Assets\MeshInitializer.cs" />
+    <Compile Include="Assets\My_Assets\Prefabs\PrintMeshInformation.cs" />
     <Compile Include="Assets\My_Assets\Scripts\CreateObj.cs" />
     <Compile Include="Assets\My_Assets\Scripts\CSharpscaling.cs" />
     <Compile Include="Assets\My_Assets\Scripts\DragObject1.cs" />
@@ -108,6 +110,8 @@
     <Compile Include="Assets\My_Assets\Scripts\SpawnRadioButtons.cs" />
     <Compile Include="Assets\My_Assets\Scripts\ToggleChildrenVisibility.cs" />
     <Compile Include="Assets\My_Assets\Scripts\UIVisibilityManager.cs" />
+    <Compile Include="Assets\ObjectPainter.cs" />
+    <Compile Include="Assets\PaintingManager.cs" />
     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ARKitFaceTrackingRemoteConnection.cs" />
     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ARKitRemoteConnection.cs" />
     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ConnectionMessageIds.cs" />
@@ -194,12 +198,17 @@
     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\UnityARSessionNativeInterface.cs" />
     <Compile Include="Assets\UnityARKitPlugin\UnityARKitPluginSettings.cs" />
     <None Include="Assets\LeanTouch\Examples\Fonts\OFL.txt" />
+    <None Include="Assets\UnityVC\StandardVC.shader" />
+    <None Include="Assets\UnityVC\StandardSpecularVC.shader" />
+    <None Include="Assets\UnityVC\UnityVCShadow.cginc" />
     <None Include="Assets\LeanTouch\Examples\Shaders\Skybox.shader" />
     <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileOcclusion.shader" />
+    <None Include="Assets\My_Assets\Shaders\VertexColor.shader" />
     <None Include="Assets\LeanTouch\Examples\Shaders\Smooth.shader" />
     <None Include="Assets\UnityARKitPlugin\ARKitRemote\ARKITREMOTE.txt" />
     <None Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Shaders\YUVShaderLinear.shader" />
     <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileARShadow.shader" />
+    <None Include="Assets\UnityVC\UnityVC.cginc" />
     <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\InstancedSurfaceShader.shader" />
     <None Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Shaders\YUVShader.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">

@@ -17,6 +17,13 @@ public class SelectTracker : MonoBehaviour {
         isBeingScaled = false;
         isBeingTranslated = false;
         deactivateHighlight();
+
+        //DELETE THIS AFTER TESTING WITH COLOR PAINTING IS FINISHED
+        /*
+        Material newMaterial = GetComponent<Renderer>().material;
+        newMaterial.color = normalColor;
+        GetComponent<Renderer>().material = newMaterial;*/
+        ContinueRotation();
 	}
 
     // Update is called once per frame
@@ -27,16 +34,22 @@ public class SelectTracker : MonoBehaviour {
 
     //important to create new unique material when highlighting/dehighlighting, or else altering one object's material changes all of them
     public void activateHighlight(){
-        Material newMaterial = GetComponent<Renderer>().material;
-        newMaterial.color = selectedColor;
-        GetComponent<Renderer>().material = newMaterial;
+        if (!PaintingManager.InPaintMode)
+        {
+            Material newMaterial = GetComponent<Renderer>().material;
+            newMaterial.color = selectedColor;
+            GetComponent<Renderer>().material = newMaterial;
+        }
         FreezeRotation();
     }
 
     public void deactivateHighlight(){
-        Material newMaterial = GetComponent<Renderer>().material;
-        newMaterial.color = normalColor;
-        GetComponent<Renderer>().material = newMaterial;
+        if (!PaintingManager.InPaintMode)
+        {
+            Material newMaterial = GetComponent<Renderer>().material;
+            newMaterial.color = normalColor;
+            GetComponent<Renderer>().material = newMaterial;
+        }
         ContinueRotation();
     }
 

@@ -64,6 +64,7 @@
     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\Editor\BoxSliderEditor.cs" />
     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Editor\ARResourcesJSON.cs" />
     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Editor\UnityARBuildPostprocessor.cs" />
+    <Compile Include="Assets\UnityVC\Editor\StandardShaderVCGUI.cs" />
     <None Include="Assets\My_Assets\Editor\Outlined Diffuse.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/Dennis/Desktop/MathTalk_Fall2018/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
