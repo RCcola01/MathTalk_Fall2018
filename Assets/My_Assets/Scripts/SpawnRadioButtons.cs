@@ -158,8 +158,10 @@ public class SpawnRadioButtons : MonoBehaviour
                         {
                             case SpawnProperty.Magnet:
                                 magnetManager.magnets.Add(obj);
-                                obj.GetComponent<SelectTracker>().normalColor = new Color(0.5f, 0.5f, 0.5f); //magents automatically have a color of gray 
-                                obj.GetComponent<SelectTracker>().deactivateHighlight(); //start with the highlight deactivated
+                                //obj.GetComponent<SelectTracker>().normalColor = new Color(0.5f, 0.5f, 0.5f); //magents automatically have a color of gray 
+                                //obj.GetComponent<SelectTracker>().deactivateHighlight(); //start with the highlight deactivated
+                                obj.GetComponent<MeshInitializer>().initialColor = new Color(0.5f, 0.5f, 0.5f); //magents automatically have a color of gray
+                                obj.GetComponent<MeshInitializer>().PaintVertexColors(new Color(0.5f, 0.5f, 0.5f));
                                 obj.GetComponent<Collider>().material = magneticMaterial; 
                                 break;
                             case SpawnProperty.Rubber:

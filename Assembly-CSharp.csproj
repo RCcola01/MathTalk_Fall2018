@@ -94,6 +94,9 @@
     <Compile Include="Assets\LeanTouch\Scripts\LeanSnapshot.cs" />
     <Compile Include="Assets\LeanTouch\Scripts\LeanTouch.cs" />
     <Compile Include="Assets\MeshInitializer.cs" />
+    <Compile Include="Assets\My_Assets\NativeAssets\NativeToolkit\Example\NativeToolkitExample.cs" />
+    <Compile Include="Assets\My_Assets\NativeAssets\NativeToolkit\Scripts\MiniJSON.cs" />
+    <Compile Include="Assets\My_Assets\NativeAssets\NativeToolkit\Scripts\NativeToolkit.cs" />
     <Compile Include="Assets\My_Assets\Prefabs\PrintMeshInformation.cs" />
     <Compile Include="Assets\My_Assets\Scripts\CreateObj.cs" />
     <Compile Include="Assets\My_Assets\Scripts\CSharpscaling.cs" />
@@ -112,6 +115,7 @@
     <Compile Include="Assets\My_Assets\Scripts\UIVisibilityManager.cs" />
     <Compile Include="Assets\ObjectPainter.cs" />
     <Compile Include="Assets\PaintingManager.cs" />
+    <Compile Include="Assets\TakeScreenshot.cs" />
     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ARKitFaceTrackingRemoteConnection.cs" />
     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ARKitRemoteConnection.cs" />
     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ConnectionMessageIds.cs" />
@@ -205,6 +209,7 @@
     <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileOcclusion.shader" />
     <None Include="Assets\My_Assets\Shaders\VertexColor.shader" />
     <None Include="Assets\LeanTouch\Examples\Shaders\Smooth.shader" />
+    <None Include="Assets\My_Assets\NativeAssets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\UnityARKitPlugin\ARKitRemote\ARKITREMOTE.txt" />
     <None Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Shaders\YUVShaderLinear.shader" />
     <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileARShadow.shader" />

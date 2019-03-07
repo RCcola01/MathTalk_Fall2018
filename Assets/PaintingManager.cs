@@ -32,12 +32,16 @@ public class PaintingManager : MonoBehaviour
     public Color paintingColor; //color the user is currently painting with
     public float brushSize; //where 1 is the normal size
 
+    public GameObject buildIcon;
+    public GameObject paintIcon;
+
     public Text mode;
 
     // Start is called before the first frame update
     void Start()
     {
         InPaintMode = false;
+        buildIcon.GetComponent<Animator>().SetBool("Open", true); //automatically start in build mode at first
     }
 
     // Update is called once per frame
@@ -50,7 +54,7 @@ public class PaintingManager : MonoBehaviour
 
     void HandlePainting(){
         RaycastHit hit;
-        if (Physics.Raycast(testCam.ScreenPointToRay(Input.touches[0].position), out hit) && InPaintMode)
+        if (Physics.Raycast(testCam.ScreenPointToRay(Input.touches[0].position/*Input.mousePosition*/), out hit) && InPaintMode)
         {
             if (hit.collider.gameObject.GetComponent<MeshFilter>().mesh.colors.Length > 0) //only paint objects that are able to accept vertex colors
             {
@@ -87,11 +91,15 @@ public class PaintingManager : MonoBehaviour
     public void EnterPaintMode(){
         InPaintMode = true;
         mode.text = "Paint Mode";
+        paintIcon.GetComponent<Animator>().SetBool("Open", true);
+        buildIcon.GetComponent<Animator>().SetBool("Open", false);
     }
 
     public void LeavePaintMode(){
         InPaintMode = false;
         mode.text = "Build Mode";
+        paintIcon.GetComponent<Animator>().SetBool("Open", false);
+        buildIcon.GetComponent<Animator>().SetBool("Open", true);
     }
 
     public void ChangeBrushSize(float size){

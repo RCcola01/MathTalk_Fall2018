@@ -136,6 +136,7 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 5887ef1bc706b22b773d253fd443ceef UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 281f258aa5168f989b50d54a0bc89f90 Assembly-CSharp.dll:.ARCameraTracker
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+bfefe8c0f1909cb461303528d810a348 Assembly-CSharp.dll:.MeshInitializer
 6c1ab29ddfcd6014cccb0aadc55da469 Assembly-CSharp.dll:Lean.Touch.LeanPlane
 17ac82beb4f998a95da5edff431f5d0f Assembly-CSharp.dll:Lean.Touch.LeanFingerSwipe
 e9f2e0bbf55e2dd4c3da63569760821f Assembly-CSharp.dll:.ARReferenceImagesSet
@@ -257,7 +258,7 @@ e0ee4b3d4e27318934cc940a969d3d96 UnityEngine.Networking.dll:UnityEngine.Networki
 ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 9b895dcabbc1faf095c000c32d471fd0 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 5887ef1bc706b22b773d253fd443ceef UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
-3bc77b52d359369bb2e62f186c73a30b Assembly-CSharp.dll:.PaintingManager
+fbe34d60c9403f9c8c67081fd95a9ecc Assembly-CSharp.dll:.PaintingManager
 0b8b8492f7e6f1d78148925da7e45b2c Assembly-CSharp.dll:UnityEngine.UI.BoxSlider
 fc01441e5d5b69ef149be4f22a897c42 Assembly-CSharp.dll:.ColorSliderImage
 8582248729a36c0fb19672393a68cd55 Assembly-CSharp.dll:.UIVisibilityManager
@@ -291,6 +292,7 @@ e80052be6f994349516ef119502d9146 Assembly-CSharp.dll:.ColorImage
 bfacedbd2d0a7ae7ec6cb5689bcd2e8f Assembly-CSharp.dll:.VideoFormatButton
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:UnityEngine.XR.iOS.UnityARUserAnchorComponent
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+be354ea1933c3cdaf7128dda6d0e6e43 Assembly-CSharp.dll:.PrintMeshInformation
 9277194e3007f91c41cc4dd392ebc5cb Assembly-CSharp.dll:Lean.Touch.LeanSelectableSpriteRendererColor
 e802b4b7eea51c0d03f1a7d0b36e094d Assembly-CSharp.dll:Lean.Touch.LeanFingerTap
 1832b55d33c4287ae3b30b88bad098a3 Assembly-CSharp.dll:Lean.Touch.LeanCameraZoom
@@ -390,5 +392,6 @@ cd67f3e1e9ccac6db86c1564cea5a827 Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.UnityARCameraNearFar
-be354ea1933c3cdaf7128dda6d0e6e43 Assembly-CSharp.dll:.PrintMeshInformation
-bfefe8c0f1909cb461303528d810a348 Assembly-CSharp.dll:.MeshInitializer
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TakeScreenshot
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.NativeToolkit
+ce765e259f4802e47490db9fd9b3baed Assembly-CSharp.dll:.NativeToolkitExample

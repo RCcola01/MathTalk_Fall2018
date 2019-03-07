@@ -16,7 +16,7 @@ public class SelectTracker : MonoBehaviour {
 		isSelected = false;
         isBeingScaled = false;
         isBeingTranslated = false;
-        deactivateHighlight();
+        //deactivateHighlight();
 
         //DELETE THIS AFTER TESTING WITH COLOR PAINTING IS FINISHED
         /*
@@ -24,32 +24,39 @@ public class SelectTracker : MonoBehaviour {
         newMaterial.color = normalColor;
         GetComponent<Renderer>().material = newMaterial;*/
         ContinueRotation();
+        //print(GetComponent<Renderer>().material.color.ToString());
+
 	}
 
     // Update is called once per frame
     void Update()
     {
         isSelected = (isBeingScaled || isBeingTranslated);
+        // USED FOR EDITOR TESTING
+        /*
+        if(!isSelected){
+            activateHighlight();
+            isBeingScaled = true;
+        }*/
+
 	}
 
     //important to create new unique material when highlighting/dehighlighting, or else altering one object's material changes all of them
     public void activateHighlight(){
-        if (!PaintingManager.InPaintMode)
-        {
-            Material newMaterial = GetComponent<Renderer>().material;
-            newMaterial.color = selectedColor;
-            GetComponent<Renderer>().material = newMaterial;
-        }
+        //add a baseline shade of selectedColor on top of whatever the vertex colors are (maintains whatever the user has painted)
+        /*Material newMaterial = GetComponent<Renderer>().material;
+        newMaterial.color = selectedColor;
+        GetComponent<Renderer>().material = newMaterial;*/
+        //GetComponent<MeshInitializer>().TurnTransparent();
         FreezeRotation();
     }
 
     public void deactivateHighlight(){
-        if (!PaintingManager.InPaintMode)
-        {
-            Material newMaterial = GetComponent<Renderer>().material;
-            newMaterial.color = normalColor;
-            GetComponent<Renderer>().material = newMaterial;
-        }
+        //return the baseline shade to plain white (maintains whatever the user has painted)
+        /*Material newMaterial = GetComponent<Renderer>().material;
+        newMaterial.color = normalColor;
+        GetComponent<Renderer>().material = newMaterial;*/
+        //GetComponent<MeshInitializer>().TurnOpaque();
         ContinueRotation();
     }
 

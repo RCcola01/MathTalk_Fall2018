@@ -276,5 +276,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e4704f30ddec4aca83f892e781602f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialColor: {r: 0.96923625, g: 0.9811321, b: 0.1527234, a: 1}
+  initialColor: {r: 0.9, g: 0.9, b: 0.1, a: 1}
   meshType: 0
