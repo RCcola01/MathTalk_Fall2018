@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GenerateShapeTest.cs" />
     <Compile Include="Assets\LeanTouch\Examples\Scripts\LeanCameraMove.cs" />
     <Compile Include="Assets\LeanTouch\Examples\Scripts\LeanCameraZoom.cs" />
     <Compile Include="Assets\LeanTouch\Examples\Scripts\LeanCanvasArrow.cs" />
@@ -93,6 +94,8 @@
     <Compile Include="Assets\LeanTouch\Scripts\LeanGesture.cs" />
     <Compile Include="Assets\LeanTouch\Scripts\LeanSnapshot.cs" />
     <Compile Include="Assets\LeanTouch\Scripts\LeanTouch.cs" />
+    <Compile Include="Assets\MeshCombiner\RateStaticMeshCombiner.cs" />
+    <Compile Include="Assets\MeshCombiner\Scripts\CombineMeshes.cs" />
     <Compile Include="Assets\MeshInitializer.cs" />
     <Compile Include="Assets\My_Assets\NativeAssets\NativeToolkit\Example\NativeToolkitExample.cs" />
     <Compile Include="Assets\My_Assets\NativeAssets\NativeToolkit\Scripts\MiniJSON.cs" />
@@ -115,6 +118,8 @@
     <Compile Include="Assets\My_Assets\Scripts\UIVisibilityManager.cs" />
     <Compile Include="Assets\ObjectPainter.cs" />
     <Compile Include="Assets\PaintingManager.cs" />
+    <Compile Include="Assets\PrepareUIForScreenshot.cs" />
+    <Compile Include="Assets\Scripts\Procedural\ProceduralCylinder.cs" />
     <Compile Include="Assets\TakeScreenshot.cs" />
     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ARKitFaceTrackingRemoteConnection.cs" />
     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ARKitRemoteConnection.cs" />
@@ -215,6 +220,7 @@
     <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileARShadow.shader" />
     <None Include="Assets\UnityVC\UnityVC.cginc" />
     <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\InstancedSurfaceShader.shader" />
+    <None Include="Assets\MeshCombiner\Readme.txt" />
     <None Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Shaders\YUVShader.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/Dennis/Desktop/MathTalk_Fall2018/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

@@ -6,6 +6,9 @@ using UnityEngine.iOS;
 
 public class TakeScreenshot : MonoBehaviour
 {
+
+    public PrepareUIForScreenshot CompanyLogo; //defined in editor
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,14 +27,18 @@ public class TakeScreenshot : MonoBehaviour
     }
 
     IEnumerator Screenshot(){
+        CompanyLogo.ScreenshotUI();
+
         //wait for everything in the frame to render before taking screenshot
         yield return new WaitForEndOfFrame();
-        FindObjectOfType<UIVisibilityManager>().CloseUIMenu();
+        //FindObjectOfType<UIVisibilityManager>().CloseUIMenu();
         yield return new WaitForSeconds(1.25f);
         print("screenshot taken");
 
         //wait 1.25 seconds before taking screenshot so we know the UI is closed
         NativeToolkit.SaveScreenshot("MathTalk", "MathTalk Screenshots");
+
+
         /*
         Texture2D screenshot = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
         screenshot.ReadPixels(new Rect(new Vector2(0, 0), new Vector2(Screen.width, Screen.height)), 0, 0, false);
@@ -41,6 +48,9 @@ public class TakeScreenshot : MonoBehaviour
         Object.Destroy(screenshot);
 
         File.WriteAllBytes("Desktop", screenshotBytes);*/
+        yield return new WaitForEndOfFrame();
+
+        CompanyLogo.ReappearUI();
     }
 
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using LylekGames;
 
 public class MeshInitializer : MonoBehaviour
 {
@@ -12,7 +13,12 @@ public class MeshInitializer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        if(meshType == MeshType.Cylinder || meshType == MeshType.Cube){
+            GetComponent<CombineMeshes>().EnableMesh();
+        }
         PaintVertexColors(initialColor); //initialize the color of the object
+
     }
 
     //paints all vertex colors of the shape's mesh to be the same color

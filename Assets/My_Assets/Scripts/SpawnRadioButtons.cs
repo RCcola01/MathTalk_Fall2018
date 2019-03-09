@@ -6,7 +6,7 @@ using UnityEngine.XR.iOS;
 public class SpawnRadioButtons : MonoBehaviour
 {
 
-
+    public Camera camera;
     //public int RadioInt = 3;
 
     public enum SpawnProperty { Magnet, Rubber, Paper, Default }; //have this be changed by the property slider. When a new object is created, it gets the property that this is currently assigned to
@@ -141,6 +141,8 @@ public class SpawnRadioButtons : MonoBehaviour
             {
                 EndPos = Camera.main.ScreenToViewportPoint(touch.position);
                 var screenPosition = Camera.main.ScreenToViewportPoint(touch.position);
+
+                //var screenPosition = camera.ScreenToViewportPoint(Input.mousePosition);
 
                 Ray ray = Camera.main.ScreenPointToRay(new Vector2(screenPosition.x * Camera.main.pixelWidth, screenPosition.y * Camera.main.pixelHeight));
                 RaycastHit hit;

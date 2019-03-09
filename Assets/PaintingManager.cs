@@ -54,7 +54,7 @@ public class PaintingManager : MonoBehaviour
 
     void HandlePainting(){
         RaycastHit hit;
-        if (Physics.Raycast(testCam.ScreenPointToRay(Input.touches[0].position/*Input.mousePosition*/), out hit) && InPaintMode)
+        if (Physics.Raycast(testCam.ScreenPointToRay(Input.touches[0].position /*Input.mousePosition*/), out hit) && InPaintMode)
         {
             if (hit.collider.gameObject.GetComponent<MeshFilter>().mesh.colors.Length > 0) //only paint objects that are able to accept vertex colors
             {
