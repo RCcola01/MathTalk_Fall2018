@@ -36,7 +36,9 @@ public class TakeScreenshot : MonoBehaviour
         print("screenshot taken");
 
         //wait 1.25 seconds before taking screenshot so we know the UI is closed
-        NativeToolkit.SaveScreenshot("MathTalk", "MathTalk Screenshots");
+        //HAD TO COMMENT OUT THIS LINE AND DISABLE SCREENSHOT FEATURE BECAUSE OF ISSUES PUSHING TO TEST FLIGHT 
+        //XCODE HAS ISSUES LINKING TO NATIVETOOLKIT PACKAGE
+        //NativeToolkit.SaveScreenshot("MathTalk", "MathTalk Screenshots");
 
 
         /*

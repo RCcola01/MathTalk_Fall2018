@@ -64,7 +64,6 @@
     <Compile Include="Assets\Editor\ProceduralCylinderEditor.cs" />
     <Compile Include="Assets\MeshCombiner\Editor\CombineMeshesEditor.cs" />
     <Compile Include="Assets\MeshCombiner\Editor\CreateCombinedStaticMeshInstance.cs" />
-    <Compile Include="Assets\My_Assets\NativeAssets\NativeToolkit\Editor\PostProcessor.cs" />
     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\Editor\BoxSliderEditor.cs" />
     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Editor\ARResourcesJSON.cs" />
     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Editor\UnityARBuildPostprocessor.cs" />
